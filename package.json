@@ -14,9 +14,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
+    "bcryptjs": "^2.3.0",
     "body-parser": "^1.15.2",
-    "crypto-js": "^3.1.8",
+    "crypto-js": "^3.1.6",
     "express": "^4.14.0",
     "jsonwebtoken": "^7.1.9",
     "lodash": "^4.15.0",
