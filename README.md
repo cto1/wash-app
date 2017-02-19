@@ -1,4 +1,4 @@
-# simple-website-using-express-handlebars
-Website template using Express and Handlebars
+# wash-app using Express, Handlebars and Stripe
+Marketing website for displaying local services and processing customer payments
 # start webserver
-node server.js
+nodemon server.js -e js,hbs
