@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Profile - Urban Wash Club</title>
+        <meta name="description" content="SimpleAPP">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.png" />
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+    <!--Navbar-->
+        <div id="logo-main" class="d-lg-flex justify-content-center"><a class="navbar-brand hidden-md-down" href="#home"><img src="images/logo-dark5.png" height="70px;"></a></div>
+        <div class="d-lg-flex justify-content-center">
+        <nav class="navbar sticky-top navbar-toggleable-md bg-faded navbar-light"  id="nav-h">
+            <div class="d-flex justify-content-end">
+        <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mr-auto" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active mobile-menu" >
+                    <a class="nav-link links" href="index.html">Home</a>
+                  </li>
+                <li class="nav-item links mobile-menu">
+                    <a class="nav-link links" href="index.html#pricing">Pricing</a>
+                  </li>
+                  <li class="nav-item mobile-menu">
+                    <a class="nav-link links" href="index.html#howitworks">How it works</a>
+                  </li>
+                  <li class="nav-item mobile-menu">
+                    <a class="nav-link" href="help.html">Contact</a>
+                  </li>
+                </ul>
+        </div>
+        <a class="navbar-brand hidden-lg-up ml-auto" href="#home"><img src="images/favicon.png" width="40px;"></a>
+            </div>
+        </nav>
+        </div>
+    <!--End Navbar-->
+        
+    <!--First fold-->
+    <div class="jumbotron jumbotron-fluid cta pt-3 pb-1">
+        <div class="container text-center">
+        <h2 class="text-uppercase display-4">Account</h2>
+        </div>
+    </div>
+    <!--End First fold-->
+        
+         
+    <div class="jumbotron jumbotron-fluid fold-sec pb-5">
+        <div class="container pb-5">
+       <div class="d-lg-flex justify-content-between">
+           
+        <!--Left nav-->
+        <div class="col-lg-4 col-sm-12 mb-3">
+            <div class="acc-left rounded">
+                <ul id="acc" class="m-0 p-0">
+                    <li class="acc-l-item  p-4">
+                    <a href="account-membership.html" class="bluelinks text-uppercase pl-2" active>
+                    <span class="fa fa-calendar pr-3"></span>Membership</a>   
+                    </li>                    
+                    <li class="acc-l-item acc-l-item-active p-4">
+                    <a href="account-profile.html" class="bluelinks text-uppercase pl-2">
+                    <span class="fa fa-user pr-3"></span>Profile</a>    
+                    </li>
+                    <li class="acc-l-item p-4">
+                    <a href="account-billing.html" class="bluelinks text-uppercase pl-2">
+                    <span class="fa fa-credit-card pr-3"></span>Billing</a> 
+                    </li>
+                    <li class="acc-l-item p-4">
+                    <a href="#" class="bluelinks text-uppercase pl-2">
+                    <span class="fa fa-power-off pr-3"></span>Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+        <!--End left nav-->
+            
+            <!--Right content-->
+        <div class="col-lg-8 col-sm-12 mb-3">
+            <div id="Membership" class="acc-right rounded p-3">
+            <h3 class="text-uppercase bluelinks">Profile</h3>
+            <div class="flex-column justify-content-center pt-3">
+            <div class="d-flex justify-content-between"> 
+            <p>First Name:<p> 
+            <p>Jane</p>
+            </div>
+            <div class="d-flex justify-content-between"> 
+            <p>Last Name:</p> 
+            <p>Paterson</p>
+            </div>
+            <div class="d-flex justify-content-between"> 
+            <p>Email:</p> 
+            <p>jane@email.com</p>
+            </div>
+            <div class="d-flex justify-content-between"> 
+            <p>Mobile:</p> 
+            <p>07519649633</p>
+            </div>
+            <div class="d-flex justify-content-between mb-4"> 
+            <p>Address:</p> 
+            <p>41 Petley road<br>
+                London<br>
+                W69SU<br>
+                United Kingdom</p>
+            </div>
+                
+            <h5>Manage your profile details</h5>
+            <hr>
+            <p>Change address.<br>
+                You don't have to cancel membership if you're moving. We'll come wherever you are. </p>
+                <p class="text-right"><a href="#" class="bluelinks">Change address</a></p>
+                <hr>
+               <p>Change email<br>
+                Enter your new email and validate.</p>  
+                <div class="form-group">
+                    <input type="email" class="form-control form-sm-input" id="CurrentPassword" aria-describedby="" placeholder="jane@email.com">
+                </div>
+                 <button type="submit" class="btn btn-secondary btn-cta p-2">Change email</button>
+                <hr>
+                <p>Change password</p>
+                 <div class="form-group">
+                    <input type="password" class="form-control form-sm-input" id="CurrentPassword" aria-describedby="" placeholder="Current Password">
+                    <input type="password" class="form-control form-sm-input" id="InputNewPassword" aria-describedby="" placeholder="New Password">
+                    <input type="password" class="form-control form-sm-input" id="InputConfirmNewPassword" aria-describedby="" placeholder="Confirm New Password">
+                </div>
+                 <button type="submit" class="btn btn-secondary btn-cta p-2">Change password</button>
+                
+            </div>
+            </div>            
+        </div>
+            
+        <!--End right content-->
+            
+         </div>   
+        </div>
+       </div> 
+        
+            
+    <!--Footer--> 
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+        <div class="col-lg-2 hidden-md-down">
+              <a href="index.html"><img class="uflogo" src="images/logo-footer.png"></a>
+        </div>
+        <div class="col-lg-3 offset-lg-1 col-md-12">
+            <div class="text-uppercase ufinline">
+            <div class="ufentry"><a class="uflinks" href="help.html">help center</a></div>
+            <div class="ufentry"><a class="uflinks" href="contact.html">contact us</a></div>
+            <div class="ufentry"><a class="uflinks" href="reviews.html">club reviews</a></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-12">
+            <div class="text-uppercase ufinline">
+            <div class="ufentry"><a class="uflinks" href="privacy.html">privacy</a></div>
+            <div class="ufentry"><a class="uflinks" href="terms.html">terms</a></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-12 hidden-sm-down">
+            <div class="text-uppercase ufinline">
+            <div class="ufentry">location</div>
+            <div><img src="images/UK%20flag.png" width="10%"> United kingdom<br><br></div>
+            <div>Accepted payments</div>
+            <div><img id="ufcards" src="images/credit-card-icons.png"> </div>
+            </div>
+        </div>
+        <div class="container">
+          <p class="rights text-center text-uppercase"><small>&copy 2017 Urban Wash Club. All rights reserved.</small></p>
+        </div>
+        </div>
+      </div>
+    </footer>
+    <!--End Footer--> 
+    </body>
+</html>
