@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Payment - Urban Wash Club</title>
+        <title>Success - Urban Wash Club</title>
         <meta name="description" content="SimpleAPP">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
@@ -22,7 +22,7 @@
     <!--First fold-->
     <div class="jumbotron jumbotron-fluid cta pt-3 pb-1">
         <div class="container text-center">
-        <h2 class="text-uppercase display-4">Payment</h2>
+        <h2 class="text-uppercase display-4">Success</h2>
         </div>
         </div>
     <!--End First fold-->
@@ -33,54 +33,24 @@
     <div class="jumbotron jumbotron-fluid fold-sec" id="fullpage">
         <div class="container pb-5">
         <div class="col-xl-4 offset-xl-4 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-12">
-            <h4 class="text-uppercase text-center">BILLING INFO</h4>
-            <p class="text-center"><span class="fa fa-gift bluelinks" aria-hidden="true"></span> Have a <a href="#" class="bluelinks">gift</a> or a <a href="#" class="bluelinks">promo</a> code?</p>
-    
-        <!--STRIPE-->
-            
-        <script src="https://js.stripe.com/v3/"></script>
-
-        <div class="form-group">    
-        <form action="/charge" method="post" id="payment-form">
-          <div class="form-row">
-            <label for="card-element">
-              Credit or debit card
-            </label>
-            <div id="card-element" class="form-control form-sm-input">
-              <!-- a Stripe Element will be inserted here. -->
-            </div>
-
-            <!-- Used to display form errors -->
-            <div id="card-errors"></div>
-          </div>
-  
-                
+        <h4 class="text-uppercase text-center"><span class="fa fa-check bluelinks mr-2"></span>Payment Successful</h4>
+            <p class="text-center">Thank you for becoming a member of Urban Wash Club.</p>   
+            <p class="text-center">Your payment was successful.</p>   
         <div class="card mb-4">
         <div class="card-block">
         <p class="card-text"><small>We will come and clean your windows in the next 7 days. We will inform you one day ahead exact date and time.</small></p>
         </div>
         </div>
-            <span id="propertytype">House</span>
-            <div class="ml-5 mr-5 mt-2 d-flex justify-content-between"> 
-            <p>Mothly subscription</p> 
-            <p><span id="price"></span></p></div>
-            <div id="borderbottom" class="ml-5 mr-5 mb-0 d-flex justify-content-between">
-                <p class="bluelinks">First month offer</p><p class="bluelinks"><span id="disprice"></span></p>
-            </div>
-            <div class="ml-5 mr-5 mt-2 d-flex justify-content-between"> 
-            <p><strong>Total</strong></p> 
-            <p><strong><span id="totalprice"></span></strong></p>
-            </div>
-        <div id="borderbottom"></div>
-        <p class="text-center ml-2 mr-2 mt-4 mb-4"><em>By clicking “Complete Order”, you accept our terms and your subscription will renew monthly and you will be charged the monthly subscription fees until you cancel. Cancel anytime by visiting your account page on our website. You must do so at least one full calendar day before your next monthly payment to avoid being charged.</em></p>
             
-            <button class="btn btn-primary btn-cta btn-block text-uppercase p-3"><span class="fa fa-lock"></span>  Complete order</button>
-            </form>
+        <div id="borderbottom"></div>
+       <p class="text-center">You can always review your membership in <a href="#" class="bluelinks">Your Account</a> area.</p>
+        <p class="text-center"><a class="bluelinks" href="#"><strong>Go to home page.</strong></a></p>
+
         </div>
         </div>
         
     </div>
-</div>
+
 
         <div id="loadnav"></div>
     <!--End Form-->   
