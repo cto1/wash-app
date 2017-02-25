@@ -6,7 +6,6 @@ const keySecret = process.env.SECRET_KEY  || "sk_test_Wxt8a3lgXbCdSvRJpAXsBVRq";
 
 const port = process.env.PORT || 3000;
 var app = express();
-const stripe = require("stripe")(keySecret);
 
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: true}));
@@ -73,29 +72,7 @@ app.get('/pay', (req, res) => {
   });
 });
 
-app.post('/charge', (req, res) => {
-  let amount = 999;
 
-  stripe.customers.create({
-    email: req.body.stripeEmail,
-    card: req.body.stripeToken
-  })
-  .then(customer =>
-    stripe.charges.create({
-      amount,
-      description: "Sample Charge",
-      currency: "gbp",
-      customer: customer.id
-    }))
-  .catch(err => console.log("Error:", err))
-  .then(charge => {
-    res.render('charge.hbs', {
-      pageTitle: 'Charge Summary',
-      paymentMessage: 'You successfully paid',
-      amount: amount/100
-    });
-  });
-});
 
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
