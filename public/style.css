@@ -266,7 +266,9 @@ body {
 
 @media only screen and (max-width:768px){
      .input-sm {margin-bottom: 1em important;}
-
+    #fullpage {
+        height: auto;
+    }
 }
 
 @media only screen and (max-width:575px){
