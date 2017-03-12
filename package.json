@@ -12,7 +12,11 @@
   "dependencies": {
     "body-parser": "^1.16.1",
     "braintree": "^2.0.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
     "express": "^4.14.0",
-    "hbs": "^4.0.0"
+    "express-session": "^1.15.1",
+    "hbs": "^4.0.0",
+    "path": "^0.12.7"
   }
 }
