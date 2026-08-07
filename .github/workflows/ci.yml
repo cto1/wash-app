@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          extensions: pdo_sqlite
+
+      - name: PHP syntax check
+        run: |
+          set -e
+          for f in $(git ls-files '*.php'); do
+            php -l "$f"
+          done
+
+      - name: JS syntax check
+        run: |
+          set -e
+          for f in $(git ls-files '*.js'); do
+            node --check "$f"
+          done
+
+      - name: API smoke tests
+        run: bash tests/smoke.sh
